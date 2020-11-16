@@ -1,0 +1,157 @@
+<HTML>
+<Head><link href="images/ap.css" rel="stylesheet"></head>
+<script>
+function check()
+{
+if(form.T1.value=="")
+{
+alert("enter ur name");
+form.T1.focus();
+return false;
+}
+else if(!isNaN(form.T1.value))
+{
+alert("enter text only");
+form.T1.focus();
+return false;
+}
+
+if(form.T2.value=="")
+{
+alert("enter user id");
+form.T2.focus();
+return false;
+}
+
+
+if(form.T3.value=="")
+{
+alert("enter password");
+form.T3.focus();
+return false;
+}
+
+
+if(form.D1.selectedIndex=="0")
+{
+alert("select");
+form.D1.focus();
+return false;
+}
+
+
+if(form.T4.value=="")
+{
+alert("enter ur ph number");
+form.T4.focus();
+return false;
+}
+else if(isNaN(form.T4.value))
+{
+alert("enter valid number");
+form.T4.focus();
+return false;
+}
+
+if(form.S1.value=="")
+{
+alert("enter ur address");
+form.S1.focus();
+return false;
+}
+
+
+if(form.T5.value=="")
+{
+alert("enter pincode");
+form.T5.focus();
+return false;
+}
+else if(isNaN(form.T5.value))
+{
+alert("enter valid number");
+form.T5.focus();
+return false;
+}
+
+
+
+
+
+
+
+
+
+return true;
+}
+</script>
+
+<body >
+<br>
+<br>
+<center>
+<h2>
+Registration Form</h2>
+<form name="form" method="POST" action="client_jsp.jsp" onSubmit='return check()'>
+ 
+ <table>
+ <tr>
+ 	<td>Name:</td>
+ 	<td></td>
+ 	<td> <input type="text" name="T1" size="20" maxlength=20></td>
+ </tr>
+ 
+ <tr>
+ 	<td> UserId:</td>
+ 	<td></td>
+ 	<td> <input type="text" name="T2" size="20" maxlength=20>
+</td>
+ </tr>
+
+ <tr>
+ 	<td>  Password:</td>
+ 	<td></td>
+ 	<td><input type="password" name="T3" size="20" maxlength=20></td>
+ </tr>
+ <tr>
+ 	<td>Gender:</td>
+ 	<td></td>
+ 	<td><select size="1" name="D1">
+	<option value="select">select</option>
+    <option value="M">Male</option>
+    <option value="F">Female</option>
+  </select></td>
+ </tr>
+  <tr>
+ 	<td>  Phone: </td>
+ 	<td></td>
+ 	<td><input type="text" name="T4" size="20" maxlength=10></td>
+ </tr>
+
+ <tr>
+ 	<td>  Address:</td>
+ 	<td></td>
+ 	<td>  <textarea rows="3" name="S1" cols="24" maxlength=150></textarea>
+</td>
+ </tr>
+ <tr>
+  <tr>
+ 	<td>  Pin Code: </td>
+ 	<td></td>
+ 	<td><input type="text" name="T5" size="20" maxlength=6></td>
+ </tr>
+ 	<td></td>
+ 	<td></td>
+ 	<td><button type="Submit"  name="B1">Submit</button><button type=reset>Reset</button></td>
+ </tr></table>
+
+
+
+
+
+  
+
+</form>
+
+</BODY>
+</HTML>
