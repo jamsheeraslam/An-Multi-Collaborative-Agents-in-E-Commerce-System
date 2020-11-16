@@ -1,0 +1,27 @@
+<HTML>
+<head><link href="images/ap.css" rel="stylesheet"></head>
+<body>
+<center>
+<br>
+<br>
+<h2>Product Details</h2>
+<br>
+<a href="Add_prod.jsp">New Product </a>
+<br>
+<br>
+
+<a href="getpurchase_det_jsp.jsp">Purchases </a>
+<br>
+<br>
+<a href="Modify_prod.jsp">Modify A Product</a>
+<br>
+<br>
+<a href="Delete_prod.jsp">Delete A Product</a>
+<br>
+<br>
+<a href="Adminservices.html"><font color="#FF9900">Back</a>
+</body>
+</html>
+
+   
+
