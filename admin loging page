@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Sathya Technologies</title>
+<meta name="author" content="kishore">
+<meta name="ogranization" content="sathyatechnologies">
+<link href="images/ap.css" rel="stylesheet">
+<script>
+	  function check()
+				  {
+						  if(f.eno.value=="")
+							 {
+								  alert("enter your id");
+								  f.eno.focus();
+								  return false;
+							 }
+							 else if(isNaN(f.eno.value))
+							{
+								  alert("enter digits only");
+								  f.eno.focus();
+								  return false;
+							 }
+						  if(f.pwd.value=="")
+							 {
+								  alert("enter pwd");
+								  f.pwd.focus();
+								  return false;
+							  }
+						 return true;
+				  }
+  </script>
+</head>
+
+<body>
+<center><br><br><br>
+<h2>Administrator Login </h2><br><br>
+<form name=f method=post action="AdminLogin_jsp.jsp" onsubmit='return check()'>
+<table>
+<tr>
+	<td>Employee No</td>
+	<td></td>
+	<td><input type="text" name="eno"></td>
+</tr>
+<tr>
+	<td>Password</td>
+	<td></td>
+	<td><input type="password" name="pwd"></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td><button type="submit">Login</button><button type="reset">Reset</button></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
