@@ -1,0 +1,13 @@
+<HTML>
+<HEAD>
+<TITLE> e-shopping </TITLE>
+</HEAD>
+<FRAMESET ROWS="15%,*,15%" border="0" noresize>
+	<FRAME SRC="upper.html" NAME="f1" scrolling="no">
+	<FRAMESET COLS="18%,*" border="0" noresize>
+			<FRAME SRC="left.html" NAME="f2">
+			<FRAME SRC="right.html" NAME="f3">
+	</FRAMESET>
+	<FRAME SRC="lower.html" NAME="f1" scrolling="no">
+</FRAMESET>
+</HTML>
